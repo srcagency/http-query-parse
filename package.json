@@ -1,0 +1,30 @@
+{
+	"name": "http-query-parse",
+	"version": "1.0.0",
+	"description": "Parse and cache the query string of a http request",
+	"main": "index.js",
+	"keywords": [
+		"http",
+		"query",
+		"querystring",
+		"parse"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tjconcept/njs-http-query-parse.git"
+	},
+	"author": {
+		"name": "Thomas Jensen",
+		"email": "thomas@tjconcept.dk",
+		"url": "http://tjconcept.dk"
+	},
+	"devDependencies": {
+		"tap": "~0.4.8"
+	},
+	"readmeFilename": "README.md",
+	"license": "MIT",
+	"dependencies": {
+		"qs": "~0.6.6",
+		"debug": "~0.8.0"
+	}
+}
