@@ -10,6 +10,8 @@ module.exports = function( request ) {
 
 	if (request._parsedQuery) {
 		parsed = request._parsedQuery;
+	} else if (request._query === '') {
+		parsed = request._parsedQuery = {};
 	} else if (request._query) {
 		parsed = request._parsedQuery = qs.parse(request._query);
 	} else if (request._parsedUrl) {
