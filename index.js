@@ -30,7 +30,7 @@ module.exports = function( request ) {
 		}
 	}
 
-	debug('processed query string to %j', parsed);
+	debug('processed query string to %o', parsed);
 
 	return parsed;
 };
