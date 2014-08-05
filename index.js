@@ -1,6 +1,6 @@
 'use strict';
 
-var qs = require('qs');
+var qs = require('querystringparser');
 var debug = require('debug')('http-query-parse');
 
 module.exports = function( request ) {

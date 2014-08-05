@@ -1,7 +1,7 @@
 # http-query-parse
 
 Parse and cache the query of an http request (supports nested clauses
-using [qs](https://github.com/visionmedia/node-querystring))
+using [querystringparser](https://github.com/petkaantonov/querystringparser))
 
 A dead-simple function you can call on an incoming request in
 multiple places without worrying about performance/caching and
