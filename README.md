@@ -13,20 +13,24 @@ and [http-get-pathname](https://github.com/tjconcept/njs-http-get-pathname)
 
 ## Installation
 
-	$ npm install http-query-parse
+```shell
+npm install http-query-parse
+```
 
 ## Usage
 
 The result is cached and subsequent calls are cheap
 
-	var httpQueryParse = require('http-query-parse');
+```js
+var httpQueryParse = require('http-query-parse');
 
-	// http://localhost/path?name=brian&age[month]=5&age[year]=1991
+// http://localhost/path?name=brian&age[month]=5&age[year]=1991
 
-	httpQueryParse(request); // { name: 'brian', age: { month: '5', year: '1991' } }
+httpQueryParse(request); // { name: 'brian', age: { month: '5', year: '1991' } }
 
-	// second call is cheap
-	httpQueryParse(request); // { name: 'brian', age: { month: '5', year: '1991' } }
+// second call is cheap
+httpQueryParse(request); // { name: 'brian', age: { month: '5', year: '1991' } }
+```
 
 ## License
 
