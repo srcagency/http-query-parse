@@ -5,7 +5,7 @@ var test = require('tap').test;
 
 test('empty', function( t ){
 	var request = {
-		url: 'http://localhost/path'
+		url: '/path'
 	};
 
 	t.deepEqual(httpQueryParse(request), {}, 'parses correctly');
@@ -17,7 +17,7 @@ test('empty', function( t ){
 test('flat', function( t ){
 	var parsed = { name: 'jean', city: 'boston' };
 	var request = {
-		url: 'http://localhost/path?name=jean&city=boston'
+		url: '/path?name=jean&city=boston'
 	};
 
 	t.deepEqual(httpQueryParse(request), parsed, 'parses correctly');
@@ -29,7 +29,7 @@ test('flat', function( t ){
 test('mixed', function( t ){
 	var parsed = { name: 'brian', age: { month: '5', year: '1991' } };
 	var request = {
-		url: 'http://localhost/path?name=brian&age[month]=5&age[year]=1991'
+		url: '/path?name=brian&age[month]=5&age[year]=1991'
 	};
 
 	t.deepEqual(httpQueryParse(request), parsed, 'parses correctly');
@@ -41,7 +41,7 @@ test('mixed', function( t ){
 test('deeply nested', function( t ){
 	var parsed = { users: { active: { online: 5 } } };
 	var request = {
-		url: 'http://localhost/path?users[active][online]=5'
+		url: '/path?users[active][online]=5'
 	};
 
 	t.deepEqual(httpQueryParse(request), parsed, 'parses correctly');
