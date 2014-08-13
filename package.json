@@ -22,7 +22,7 @@
 		"url": "http://tjconcept.dk"
 	},
 	"devDependencies": {
-		"tap": "~0.4.8"
+		"tap": "^0.4.12"
 	},
 	"readmeFilename": "README.md",
 	"license": "MIT",
