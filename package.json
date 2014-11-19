@@ -22,15 +22,15 @@
 		"url": "http://tjconcept.dk"
 	},
 	"devDependencies": {
-		"tap": "^0.4.12",
+		"tap": "^0.4.13",
 		"http-get-pathname": "^2.0.0",
 		"parseurl": "^1.3.0",
-		"pluck-keys": "^0.0.3"
+		"pluck-keys": "^0.0.4"
 	},
 	"readmeFilename": "README.md",
 	"license": "MIT",
 	"dependencies": {
-		"querystringparser": "~0.1.0",
-		"debug": "~1.0.2"
+		"querystringparser": "^0.1.1",
+		"debug": "^2.1.0"
 	}
 }
