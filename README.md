@@ -37,4 +37,4 @@ httpQueryParse(request); // { name: 'brian', age: { month: '5', year: '1991' } }
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Thomas Jensen](http://tjconcept.dk)
+[MIT](http://opensource.org/licenses/MIT) © [src.agency](http://src.agency)
