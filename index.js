@@ -20,11 +20,11 @@ module.exports = function( request ) {
 		var qsIdx = request.url.indexOf('?');
 
 		if (~qsIdx) {
-			request._pathname = request.url.slice(1, qsIdx);
+			request._pathname = request.url.slice(0, qsIdx);
 			request._query = request.url.slice(qsIdx+1);
 			parsed = request._parsedQuery = qs.parse(request._query);
 		} else {
-			request._pathname = request.url.substring(1);
+			request._pathname = request.url;
 			request._query = '';
 			parsed = request._parsedQuery = {};
 		}

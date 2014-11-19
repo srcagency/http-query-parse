@@ -61,7 +61,7 @@ test('in conjunction with http-get-pathname', function( t ){
 			url: '/path?name=jean&city=boston'
 		};
 
-		t.equal(getPathname(request), 'path', '(superfluous test - only for development)');
+		t.equal(getPathname(request), '/path', '(superfluous test - only for development)');
 		t.deepEqual(httpQueryParse(request), parsed, 'parses correctly');
 		t.deepEqual(httpQueryParse(request), parsed, 'parses correctly second run');
 		t.end();
@@ -74,7 +74,7 @@ test('in conjunction with http-get-pathname', function( t ){
 
 		t.deepEqual(httpQueryParse(request), parsed, 'parses correctly');
 		t.deepEqual(httpQueryParse(request), parsed, 'parses correctly second run');
-		t.equal(getPathname(request), 'path', '(superfluous test - only for development)');
+		t.equal(getPathname(request), '/path', '(superfluous test - only for development)');
 		t.end();
 	});
 
@@ -83,7 +83,7 @@ test('in conjunction with http-get-pathname', function( t ){
 			url: '/path'
 		};
 
-		t.equal(getPathname(request), 'path', '(superfluous test - only for development)');
+		t.equal(getPathname(request), '/path', '(superfluous test - only for development)');
 		t.deepEqual(httpQueryParse(request), {}, 'parses correctly');
 		t.deepEqual(httpQueryParse(request), {}, 'parses correctly second run');
 		t.end();
