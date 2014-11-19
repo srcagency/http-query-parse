@@ -7,9 +7,9 @@ A dead-simple function you can call on an incoming request in
 multiple places without worrying about performance/caching and
 without any prior parsing of the request/url.
 
-If you like the style, check out
-[http-body-parse](https://github.com/tjconcept/njs-http-body-parse)
-and [http-get-pathname](https://github.com/tjconcept/njs-http-get-pathname)
+If you like the style, check out:
+- [http-body-parse](https://github.com/srcagency/http-body-parse)
+- [http-get-pathname](https://github.com/srcagency/http-get-pathname)
 
 Uses results cached in `_parsedUrl` if available which works great with
 for instance [parseurl](https://www.npmjs.org/package/parseurl).
