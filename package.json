@@ -1,6 +1,6 @@
 {
 	"name": "http-query-parse",
-	"version": "2.2.0",
+	"version": "2.2.1",
 	"description": "Parse and cache the query string of a http request",
 	"main": "index.js",
 	"scripts": {
